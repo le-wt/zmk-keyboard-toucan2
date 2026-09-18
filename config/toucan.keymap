@@ -21,14 +21,14 @@
         };
 
         navl {
-            display-name = "NAV Left";
+            display-name = "NAVL";
             bindings = <
 &none  &none  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_UP  &kp HOME  &kp END  &kp PAGE_DOWN  &none  &none  &none  &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none  &studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &studio_unlock  &none  &kp F6  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp F7  &none
             >;
         };
 
         navr {
-            display-name = "NAV Right";
+            display-name = "NAVR";
             bindings = <
 &none  &none  &kp PAGE_DOWN  &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_UP  &kp HOME  &kp END  &kp PAGE_DOWN  &none  &none  &none  &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none  &studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &studio_unlock  &none  &kp F6  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp F7  &none
             >;
