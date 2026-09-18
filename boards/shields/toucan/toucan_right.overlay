@@ -61,22 +61,20 @@
         report-rate-lp2 = <640>; // 640ms report rate in LP2 state means 55uA draw rather than default 160ms 174uA draw
         scroll-angle = <30>; // The default angle (about 47 deg) is too big on toucan2 I think
         sensitivity = <100>;
-        scroll-sensitivity = <150>;
-        scroll-initial-distance = <50>;
+        scroll-sensitivity = <200>;
+        scroll-initial-distance = <10>;
 
         filter-settings=<0x0B>;
         hold-time = <500>;
 
-        zoom;
         scroll;
         two-finger-tap;
         single-tap;
         press-and-hold;
         //swipes;
-        three-finger-swipe;
-        three-finger-swipe-throttle-ms = <1200>;
         switch-xy;
         invert-scroll-y;
+        invert-scroll-x;
 
     };
 };
