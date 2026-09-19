@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAVL  1
@@ -16,7 +17,7 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &key_repeat  &kp A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G  &kp H  &mt RIGHT_ALT J  &mt RIGHT_GUI K  &mt RCTRL L  &kp SEMICOLON  &kp SINGLE_QUOTE  &lt NAVL ESCAPE  &kp TILDE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp PERIOD  &lt NAVR ESCAPE  &lt NUM GRAVE  &lt SYM BACKSPACE  &mt LEFT_SHIFT SPACE  &mt RIGHT_SHIFT ENTER  &lt SYM BACKSPACE  &lt NUM PRINTSCREEN
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &mkp MCLK  &kp A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G  &kp H  &mt RIGHT_ALT J  &mt RIGHT_GUI K  &mt RCTRL L  &kp SEMICOLON  &kp SINGLE_QUOTE  &lt NAVL ESCAPE  &kp TILDE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp PERIOD  &lt NAVR ESCAPE  &lt NUM GRAVE  &lt SYM BACKSPACE  &mt LEFT_SHIFT SPACE  &mt RIGHT_SHIFT ENTER  &lt SYM BACKSPACE  &lt NUM PRINTSCREEN
             >;
         };
 
