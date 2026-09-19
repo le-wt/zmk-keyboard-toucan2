@@ -45,7 +45,7 @@
         num {
             display-name = "NUM";
             bindings = <
-&sk LC(C)  &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &kp LC(T)  &kp LC(U)  &kp LC(I)  &kp LC(O)  &kp LC(S)  &kp LC(EQUAL)  &kp LC(V)  &kp PLUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &kp LC(Q)  &kp LC(NUMBER_0)  &kp LC(A)  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp LC(W)  &kp LC(J)  &kp LC(K)  &kp LC(R)  &kp LC(G)  &kp LC(MINUS)  &none  &none  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &none  &none
+&kp LC(C)  &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &kp LC(T)  &kp LC(U)  &kp LC(I)  &kp LC(O)  &kp LC(S)  &kp LC(EQUAL)  &kp LC(V)  &kp PLUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &kp LC(Q)  &kp LC(NUMBER_0)  &kp LC(A)  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp LC(W)  &kp LC(J)  &kp LC(K)  &kp LC(R)  &kp LC(G)  &kp LC(MINUS)  &none  &none  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &none  &none
             >;
         };
     };
