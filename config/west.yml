@@ -22,5 +22,8 @@ manifest:
     - name: zmk-input-zoom
       remote: beekeeb
       revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: v0.3
   self:
     path: config
