@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         DMENU {
-            bindings = <&kp LA(SPACE)>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <38 39>;
         };
     };
