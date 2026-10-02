@@ -83,5 +83,3 @@ keymap {
         };
     };
 };
-    hold-trigger-on-release;
-)
