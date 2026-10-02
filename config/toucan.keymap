@@ -1,6 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
 #define BASE 0
 #define NAVL  1
 #define NAVR  2
@@ -16,7 +13,10 @@
         DMENU {
             bindings = <&kp LG(SPACE)>;
             key-positions = <38 39>;
-        };
+        
+         layers = <0>;
+         require-prior-idle-ms = <150>;
+         timeout-ms = <50>;};
     };
 
     keymap {
@@ -26,34 +26,34 @@
             display-name = "BASE";
             bindings = <
 &kp QUESTION  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp EXCLAMATION  &mo 3  &kp A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G  &kp H  &mt RIGHT_ALT J  &mt RIGHT_GUI K  &mt RCTRL L  &kp SEMICOLON  &mo 3  &kp SLASH  &kp TILDE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp PERIOD  &kp COMMA  &kp MINUS  &lt 4 TAB  &lt 1 ESCAPE  &mt LEFT_SHIFT SPACE  &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &lt 4 GRAVE
-            >;
+>;
         };
 
         num {
             display-name = "NUM";
             bindings = <
 &none  &none  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &none  &none  &none  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &none  &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &none  &none  &none  &none  &none  &none  &none  &kp PLUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOLLAR  &none  &none  &none  &none  &kp ENTER  &kp NUMBER_0  &kp PERIOD
-            >;
+>;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
 &kp GRAVE  &kp NUMBER_0  &kp CARET  &kp PERCENT  &kp DOLLAR  &kp EXCLAMATION  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDERSCORE  &kp AMPERSAND  &none  &none  &kp COMMA  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp POUND  &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp AT_SIGN  &none  &none  &kp TILDE  &kp PERIOD  &kp QUESTION  &kp SLASH  &kp ASTERISK  &kp PLUS  &kp LESS_THAN  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp PIPE  &none  &kp BACKSLASH  &kp COLON  &kp SPACE  &none  &none  &none
-            >;
+>;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
 &none  &none  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LC(D)  &none  &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM  &none  &none  &none  &none  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LC(C)  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none  &studio_unlock  &none  &kp LC(Z)  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none  &none  &none  &none  &none  &studio_unlock  &none  &none  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp HOME  &kp END
-            >;
+>;
         };
 
         gui {
             bindings = <
 &none  &none  &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LG(GRAVE)  &kt LC(LS(LA(T)))  &kp LC(LA(LS(PAGE_DOWN)))  &kt LA(LS(LC(PAGE_UP)))  &kp LS(LA(LC(Q)))  &none  &none  &none  &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &none  &none  &none  &none  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LS(LA(LC(W)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(N)))  &none  &none  &none  &none  &none  &none  &none  &none
-            >;
+>;
 
             label = "GUI";
         };
@@ -62,6 +62,8 @@
 
 #include <zmk-helpers/helper.h>                                             // Requires zmk-helpers module.
 #include <zmk-helpers/key-labels/42.h>                                      // Source key-labels.
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // Left-hand keys.
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys.
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
