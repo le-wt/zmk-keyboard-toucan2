@@ -49,7 +49,7 @@ keymap {
         base {
             display-name = "BASE";
             bindings = <
-&kp QUESTION  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp EXCLAMATION  &mo 3  &kp A  &hrml LCTRL S  &hrml LEFT_GUI D  &hrml LEFT_ALT F  &kp G  &kp H  &hrmr RIGHT_ALT J  &hrmr RIGHT_GUI K  &hrmr RCTRL L  &kp SEMICOLON  &mo 3  &kp SLASH  &kp TILDE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp PERIOD  &kp COMMA  &kp MINUS  &lt 4 TAB  &lt 1 ESCAPE  &mt LEFT_SHIFT SPACE  &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &lt 4 GRAVE
+&kp QUESTION  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp EXCLAMATION  &mo 3  &kp A  &hrml LCTRL S  &hrml LEFT_GUI D  &hrml LEFT_ALT F  &kp G  &kp H  &hrmr RIGHT_ALT J  &hrmr RIGHT_GUI K  &hrmr RCTRL L  &kp SEMICOLON  &mo 3  &kp SLASH  &kp TILDE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp PERIOD  &kp COMMA  &kp MINUS  &lt 1 TAB  &lt 2 ESCAPE  &mt LEFT_SHIFT SPACE  &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &lt 1 GRAVE
 >;
         };
 
@@ -74,13 +74,6 @@ keymap {
 >;
         };
 
-        gui {
-            bindings = <
-&none  &none  &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LG(GRAVE)  &kt LC(LS(LA(T)))  &kp LC(LA(LS(PAGE_DOWN)))  &kt LA(LS(LC(PAGE_UP)))  &kp LS(LA(LC(Q)))  &none  &none  &none  &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &none  &none  &none  &none  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LS(LA(LC(W)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(R)))  &kp LS(LA(LC(N)))  &none  &none  &none  &none  &none  &none  &none  &none
->;
-
-            label = "GUI";
-        };
     };
 };
 
